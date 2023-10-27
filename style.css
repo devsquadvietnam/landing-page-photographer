@@ -54,7 +54,6 @@ body {
   display: flex;
   flex-wrap: wrap;
   background-color: #1a1818;
-  height: 700px;
 }
 
 .introduction-1 {
@@ -144,58 +143,129 @@ body {
 }
 
 .footer {
-    background-color: #1a1818;
-    padding-left: 50px;
-    height: 500px;
-    display: flex;
+  background-color: #1a1818;
+  padding-left: 50px;
+  height: 500px;
+  display: flex;
 }
 
 .contact {
-    flex: 1;
+  flex: 1;
 }
 
 .contact-info {
-    color: #fff;
-    padding-top: 100px;
+  color: #fff;
+  padding-top: 100px;
 }
 
 .contact-info div {
-    display: flex;
-    align-items: center;
-    gap: 20px;
+  display: flex;
+  align-items: center;
+  gap: 20px;
 }
 
 .contact-info h3 {
-    font-size: 30px;
+  font-size: 30px;
 }
 
 .contact-info i {
-    font-size: 50px;
+  font-size: 50px;
 }
 
 .socials-info {
-    padding-top: 50px;
+  padding-top: 50px;
 }
 
 .social-links {
-   display: flex;
-   gap: 20px;
+  display: flex;
+  gap: 20px;
 }
 
 .social-links i {
-    color: #fff;
-    font-size: 40px;
+  color: #fff;
+  font-size: 40px;
 }
 
-.socials-info p{
-    font-size: 20px;
-    color: #fff;
+.socials-info p {
+  font-size: 20px;
+  color: #fff;
 }
 
 .image-footer {
-    flex: 1;
-    background-image: url("https://images.pexels.com/photos/2105416/pexels-photo-2105416.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1");
-    background-size: cover;
-    background-repeat: no-repeat;
+  flex: 1;
+  background-image: url("https://images.pexels.com/photos/2105416/pexels-photo-2105416.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1");
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 
+/* Use a media query to add a breakpoint at 800px: */
+@media screen and (max-width: 900px) {
+  .banner-box .author {
+    flex: 50%;
+    padding-top: 0;
+    padding-left: 15px;
+  }
+
+  .banner-box .author h1 {
+    font-size: 87px;
+    margin-bottom: 0;
+  }
+
+  .banner-box .description {
+    flex: 100%;
+    padding-top: 0;
+    padding-left: 15px;
+  }
+
+  .introduction .introduction-1 {
+    flex: 100%;
+    padding-right: 50px;
+    padding-left: 15px;
+
+  }
+
+  .introduction .introduction-2 {
+    flex: 100%;
+    margin-top: 30px;
+  }
+
+  .collection {
+    padding: 0 15px;
+  }
+
+  .winter-collections .collection{
+    flex-wrap: wrap;
+  }
+
+  .winter-collections .collection .collection-item{
+    flex: 100%;
+  }
+
+  .summer-collections .collection-item {
+    flex: 100%;
+  }
+
+  .footer {
+    flex-direction: column-reverse;
+    height: 1000px;
+    padding-left: 0;
+  }
+
+  .footer .contact-info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .footer .socials-info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .collections h2 {
+    font-size: 30px;
+  }
+}
